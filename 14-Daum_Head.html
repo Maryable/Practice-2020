@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daum header</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- xeicon CDN (content delivery network) -->
+    <!-- 순서상 링크 CSS파일 밑에 style을 써야 함 -->
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;500;800;900&display=swap');
+        /* gothic A1 구글 웹폰트 스타일 시트 문서 안에서 외부 파일을 연결한 것 */
+
+        body {
+            font-family: 'Gothic A1', sans-serif;
+            font-weight: 600;}
+
+        * {margin: 0;padding: 0;}
+
+        header {/* width: 100%; */ height: 195px; /* background-color: yellow; */}
+        /* 기본 세팅 */
+        li {list-style: none;}
+        a {text-decoration: none; color: #333;}
+        
+        .header_top {width: 1000px; height: 150px; /* background-color:teal; */
+        margin: 0 auto;}
+
+        /* logo라는 id를 가지고 있는 h1태그와 그 자식요소 */
+        h1#logo img {
+            height: 50px;
+            /* padding-top: 50px; 패딩을 주면 패딩영역까지 a tag영역이 되어서 클릭이 됨*/
+            margin-top: 50px;
+        }
+
+        nav {
+            /* width: 100%; */
+            height: 45px;
+            /* background-color: violet; */
+            /* opacity: 0.5; */
+            /* 투명도, 1이 100%, 0이 0% */
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #555;
+        }
+
+        nav ul {
+            width: 1000px; 
+            /* background-color: rgb(221, 255, 221); */
+            margin: 0 auto; 
+            height: 44px; 
+            /* height는 위에 보더라인은 빼고
+            아래 보더라인까지 잡아야 
+            더보기를 눌렀을 때 아래로 예쁘게 떨어짐. */
+        }
+
+        nav ul li {float: left;
+            /* display: inline-block; (여백 생성) */
+            margin-right: 10px;
+            font-size: 14px;
+            letter-spacing: -0.5px;
+            /* 글자 간격 */
+            /* color: red; 
+            위에 a태그에 이미 색상을 줬기 떄문에 
+            글자 색상이 여기에서 바뀌지 않음*/
+        }
+
+        nav ul li a {color:#454545; line-height: 44px;}
+
+
+        nav ul li a:hover {
+            color: #608DF9;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- h1태그는 최상위 타이틀에 딱 한 번 사용, 주로 로고에 사용 -->
+        <!-- 로고 클릭시 시작화면으로 이동해야 하므로 링크 걸어야 함 -->
+        <!-- index.html이거는 시작화면으로 약속한것.  -->
+        <div class="header_top">
+            <h1 id="logo"><a href="index.html"><img src="images/daumNN.png" alt="Daum logo"></a></h1>
+        </div> <!-- header top end -->
+
+        <nav> <!-- menu start -->
+            <ul> <!-- 리스트태그인 ul과 li태그로 주로 메뉴를 구성함 -->
+                <li><a href="#">메일</a></li>
+                <li><a href="#">카페</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">지도</a></li>
+                <li><a href="#">증권</a></li>
+                <li><a href="#">쇼핑</a></li>
+                <li><a href="#">카카오TV</a></li>
+                <li><a href="#">웹툰</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">브런치</a></li>
+                <li><a href="#">사전</a></li>
+                <li><a href="#">게임</a></li>
+                <li><a href="#">같이가치</a></li>
+                <li><a href="#">더보기<i class="xi-angle-down-min"></i></a></li> 
+                
+            </ul>
+        </nav>
+    </header> 
+</body>
+</html>
