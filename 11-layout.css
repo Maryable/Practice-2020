@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 800px;
+    background-color: navy;
+    margin: 100px auto;
+    padding: 15px;
+}
+.box {float: left; margin-right: 15px;}
+
+/* left box row */
+.left {
+    width: 250px;
+    height: 800px;
+    /* background-color: lightgray; */
+}
+
+.leftbox {
+    width: 250px;
+    background-color: skyblue;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.box1, .box3 {
+    height: 190px;
+}
+
+.box2 {
+    height: 160px;
+}
+
+.box4,.box5 {
+    height: 100px;
+    background-color: transparent;
+}
+
+.box44 {
+    width: 81.333px;
+    height: 31.333px;
+    background-color: white;
+    float: left;
+    margin: 1px 1px 1px 1px;
+}
+
+.box44:last-child {background-color: transparent;}
+
+.box5 {
+    height: 100px;
+    background-color: teal;
+}
+
+
+/* mid box */
+.mid {
+    width: 250px;
+    height: 800px;
+    /* background-color: lightgray; */
+}
+
+.mid_box1 {
+    width: 250px;
+    height: 190px;
+}
+
+.mid_box11 {
+    height: 59px; 
+    background-color: rgba(120, 179, 228, 0.959);
+    margin-bottom: 6px;}
+
+.mid_box11:first-child {
+    background-color: rgb(240, 51, 152);
+}
+.mid_box11:last-child {
+    background-color: rgb(99, 201, 214);
+}
+
+.mid_box2 {
+    width: 250px;
+    height: 100px;
+    /* background-color: rgb(245, 159, 159); */
+    margin-top: 15px
+}
+
+.mid_box22 {
+    width: 60.5px;
+    height: 49px;
+    background-color: white;
+    float: left;
+    margin: 1px;
+}
+
+.mid_box3 {
+    height: 200px;
+    background-color: skyblue;
+    margin-top: 15px;
+}
+
+.mid_box4 {
+    height: 150px;
+    background-color: skyblue;
+    margin-top: 15px;
+}
+
+.mid_box5 {
+    height: 100px;
+    background-color: skyblue;
+    margin-top: 15px;
+}
+
+/* right box */
+#right {
+    width: 470px;
+    height: 190px;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.r_box1 {
+    width: 265px;
+    height: 190px;
+    background-color: teal;
+}
+
+.r_box11 {
+    width: 265px;
+    height: 60px;
+    background-color: cyan;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.r_box2 {
+    width: 190px;
+    height: 190px;
+    background-color: white;
+    float: right;
+}
+
+.right_box2 {
+    width: 265px;
+    height: 190px;
+    background-color: lightblue;
+}
+
+.right_box3 {
+    width: 470px;
+    height: 190px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-Semantic tag</title>
+    <!-- 시맨틱 태그는 사람들이 소스를 쉽게 이해할 수 있도록 의미가 통하게
+    주요 태그를 미리 약속해 놓고 사용하는 것이다. 
+    header, section, nav, article, aside, footer -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        #wraper {
+            width: 100%;
+            height: 100%;
+            background-color: lightgray;
+        }
+
+        header {
+            /* width: 100%; 안 써도 100%씀. 블럭요소 */
+            height: 15%;
+            background-color: white;
+            /* margin: 0 auto; */
+        }
+
+        section {
+            height: 70%;
+            background-color: rgb(235, 208, 175);
+        }
+
+        footer {
+            height: 15%;
+            background-color: rgb(92, 110, 110);
+            color: white;
+        }
+        /* 반응형 모바일- 가로는 %로 짜는데 세로는 픽셀로 짜도 스크롤이 되니까.  */
+    </style>
+</head>
+<body>
+    <div id="wraper">
+        <header>header-머리말 영역 (주로 로고, 네비게이션 포함)</header>
+        <section>section- 본문영역 (비주얼 슬라이드, 배너, 공지사항, 최신뉴스 등 모든 컨텐츠)</section>
+        <footer>footer - 꼬리말 영역 (copyright, 고객센터, 주소, 전화번호, 개인정보 정책, 이용자 약관, 패밀리 사이트 등)</footer>
+    </div>
+</body>
+</html>

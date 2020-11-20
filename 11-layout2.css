@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.PP {
+    width: 1000px;
+    height: 800px;
+    margin: 50px auto;
+    background-color: navy;
+}
+
+.container1, .container2, .container3 {
+    float: left;
+    background-color: lightblue
+}

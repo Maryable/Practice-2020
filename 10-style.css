@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 850px;
+    height: 820px;
+    margin: 50px auto;
+    border: 1px solid #000000;
+}
+
+/* first box */
+.box {
+    width: 200px;
+    height: 800px;
+    background-color: transparent;
+    margin-left: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+.bc1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+.bc12 {
+    height: 250px;
+    background-color: tomato;
+}
+
+.bc13 {
+    height: 330px;
+    background-color: orange;
+}
+
+/* second box */
+.bc2 {
+    width: 200px;
+    height: 100px;
+    background-color: lightpink;
+    margin-bottom: 10px;
+}
+
+.bc2:first-child {
+    height: 95px;
+    background-color: lightsalmon;
+}
+
+.bc2:nth-child(2) {
+    height: 95px;
+    background-color: navy;
+}
+
+.bc2:nth-child(3) {
+    height: 250px;
+    background-color: palevioletred;
+}
+
+.bc2:nth-child(4) {
+    height: 160px;
+}
+
+.bc2:last-child {
+    height: 160px;}
+
+    /* third box */
+.bc3 {
+    width: 200px;
+    height: 460px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.bc3_1 {
+    width: 95px;
+    height: 460px;
+    /* 부모의 높이 상속 안 됨 */
+    float: left;
+}
+
+.bc3_1:first-child {background-color: aquamarine;}
+.bc3_1:last-child{float:right;}
+
+.bc3:last-child {
+    height: 330px;
+    background-color: teal;
+}
+
+.bc3_11 {
+    width: 95px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: rgb(196, 128, 236);
+}
+
+.bc3_11:last-child {
+    height: 250px;
+}
+
+/* forth box */
+.b4 {margin-bottom: 10px;}
+.b4:first-child {
+    height: 200px;
+    background-color: bisque;
+}
+
+.b4:nth-child(2) {
+    height: 250px;
+    background-color: brown;
+}
+
+.b4-1 {width: 95px; float: left;}
+.b4-1:first-child {
+    height: 330px;
+    background-color: burlywood;
+    margin-right: 10px;}
+.b4-1:last-child {
+    height: 330px;
+    background-color: chocolate;
+}

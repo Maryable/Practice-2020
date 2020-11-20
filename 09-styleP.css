@@ -1,0 +1,78 @@
+/* ----header---- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper1 {
+    width: 820px;
+    padding: 10px;
+    background-color: paleturquoise;
+    margin: 0 auto;
+}
+
+header {
+    width: 800px;
+    height: 80px;
+    background-color: plum;
+    padding: 10px;
+}
+
+.h--child {
+    width: 260px;
+    height: 80px;
+    background-color: sandybrown;
+    float: left;
+    margin-right: 10px;
+}
+
+.child3 {
+    margin-right: 0;
+}
+
+/* ----section---- */
+section {
+    width: 820px;
+    height: 520px;
+    background-color: steelblue;
+    margin-top: 10px;
+}
+
+.s--child {
+    width: 395px;
+    height: 500px;
+    background-color:beige ;
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+
+.s--gc {
+    width: 375px;
+    height: 235px;
+    background-color: coral;
+    margin: 10px
+}
+
+/* ----footer---- */
+footer {
+    width: 820px;
+    height: 100px;
+    background-color: rgb(12, 27, 27);
+}
+
+.f--child1, .f--child2 {
+    width: 530px;
+    height: 80px;
+    background-color: darkgoldenrod;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.f--child2 {
+    width: 260px;
+    float: right;
+    margin-left: 0;
+    margin-right: 10px;
+}

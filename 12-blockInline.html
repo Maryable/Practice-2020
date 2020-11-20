@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-BlockInline</title>
+    <style>
+        *{margin:0; padding: 0;}
+        /* div는 width를 따로 주지 않으면 윈도우 기본 크기 혹은 부모크기 전체 */
+        /* height은 따로 주지 않으면 자식객체 크기 */
+
+        .container {border: 1px solid black; margin: 20px;}
+        .c1-child {width:100px; height: 100px; border: 1px solid #ff0000;
+            display: inline; font-size: 2em;}
+
+        /* 블럭요소를 inline요소로 변경 : 크기 적용이 안 된다.*/
+
+        span, a {width: 200px; height: 200px; background-color: aqua;
+        display: block; margin:10px ; font-size: 2em;}
+
+        /* span은 inline요소, 크기를 줘도 적용이 안 된다. text와 같은 요소 */
+        /* block요소로 바꾸면 다시 공간을 사용함. */
+        
+        .c-2 {width:700px; text-align: center; margin: 0 auto;}
+        /* text align을 부모 요소에 줘야 함.*/
+
+        .c2-child {
+            height: 100px; width: 100px; background-color: brown;
+            display: inline-block;
+            /* 블럭요소를 인라인 블럭 요소로 변경: 옆으로 가면서 블럭성질 */
+            /* inline-block은 요소간 여백이 자동으로 있으므로 정확한 여백 조절하기 위해서 쓰지 x */
+
+            text-align: center;
+            /* float: left;를 주면 다시 inline-block이 안 먹고 다시 정렬해야 함. */
+        }
+
+        .img_box {text-align: center; background-color: yellowgreen;}
+        .img_box img {width: 200px; display: block; margin: 0 auto;}
+        /* img는 인라인 요소라서 text성격, 밑에 약간 margin생기고 textalign이 먹음. */
+        /* block요소로 바꾸면 아래 margin은 사라지지만 
+        text-align이 먹지 않아서, margin 0 auto다시 줘서 가운데 정렬 해야 함. */
+        
+        .Logo_box {
+            width:500px; 
+            height: 200px;
+            margin:20px auto; 
+            text-align: center; 
+            border: 2px solid #000;
+            /* '배스킨라빈스'는 img와 형제와 같은 관계이므로 박스에서 조절 */
+            /* 가운데로 정렬 */
+            line-height: 200px;
+            }
+
+        .Logo_box img {
+            height: 100px; 
+            vertical-align: middle;
+             /* 가운데로 정렬 */
+            /* margin-top: 50px; */
+            padding-right: 10px;
+            margin-top: -5px;
+        }
+
+        #v-align {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #009;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 100px;
+            
+
+        }
+
+        #v-align i {vertical-align: middle; display: table-cell;}
+
+    </style>
+</head>
+<body>
+    <div class="container c-1">
+        <div class="c1-child">C-1</div>
+        <div class="c1-child">C-1</div>
+        <div class="c1-child">C-1</div>
+        <div class="c1-child">C-1</div>
+        <div class="c1-child">C-1</div>
+    </div> <!-- container c-1 end -->
+
+    <span>인라인 요소</span>
+    <a href="#">Google</a>
+
+    <div class="container c-2">
+        <div class="c2-child">C-2</div>
+        <div class="c2-child">C-2</div>
+        <div class="c2-child">C-2</div>
+        <div class="c2-child">C-2</div>
+        <div class="c2-child">C-2</div>
+    </div> <!-- container c-2 end -->
+
+    <div class="img_box">
+        <img src="images/dog.jpg" alt="dog image"> 
+        <!-- 인라인 요소는 margin을 0으로 해도 살짝 공간이 남음 -->
+    </div>
+
+    <div class="Logo_box">
+        <img src="images/Baskin-Robbins_logo.png" alt="BR-Logo"> 배스킨라빈스
+    </div>
+
+    <div id="v-align"><i>vertical-align</i></div>
+</body>
+</html>

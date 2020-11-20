@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-텍스트와 관련된 태그</title>
+
+    <style>
+        h3 {
+            font-size: 30px;
+        }
+        /* 상위요소 하위요소 하위요소 ... 이렇게 자식개체 선택 */
+        h3 span {
+            font-size: 16px;
+            font-weight: lighter;
+            color: cornflowerblue;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <h1>
+        웹 브라우저의 종류
+        <i>종류</i>
+    </h1>
+
+    <h2>마이크로소프트-엣지, 익스플로러</h2>
+    <h3>구글 - 크롬</h3>
+    <h4>애플 - 사파라</h4>
+    <h5>모질라 - 파이어폭스</h5>
+    <h6>오페라 - 오</h6>
+
+    <p>html은 <b>hypertext markup language</b>의 약자이다. (문서의 구조) <br>
+    css는 <mark>cascade style sheet</mark>의 약자이다. (디자인)<br>
+    js는 <strong>Javascript</strong>의 약자이다. (동적인 표현) </p>
+    <pre>
+        산토끼 토끼야 
+        어디를 가느냐 
+        깡총깡총 뛰면서 
+        어디를 가느냐 
+    </pre>
+        <!-- pre태그는 html문서에서 작성한 그대로 나온다. -->
+
+    <p>산토끼 토끼야 
+        어디를 가느냐 
+        깡총깡총 뛰면서 
+        어디를 가느냐 </p>
+    
+    <i>이탤릭체</i>
+    <b>Bold</b>
+    <mark>highlight</mark>
+    <strong>important bold</strong>
+    <span>span태그 자체로는 아무런 변화 없음. </span>
+    <u>underline</u>
+    <del>delete</del>
+    <!-- text형태인 인라인요소에 width, height 줘도 먹지 않음. 먹는 애들도 있음 -->
+
+    <p>윗첨자 <sup>(1)</sup></p>
+    <p>아래첨자 <sub>(2)</sub></p>
+
+
+    <h3>LOGIN <span>배스킨라빈스 홈페이지에 오신 것을 환영합니다.</span></h3>
+    <!-- 줄바꿈을 하지 않고도 한 영역 안에서 자식개체를 만들어서 특정 영역을 묶어서
+    스타일을 따로 주고자 쓴다. '900원'에서 '원'만 따로 효과를 주기 위해. -->
+</body>
+</html>

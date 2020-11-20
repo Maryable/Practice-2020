@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-div(id와 class) 태그</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        p {
+            padding: 50px 0;
+            /* 안쪽여백 위아래 50, 좌우 0 */
+        }
+
+        h2 {
+            padding: 20px 0;
+        }
+
+        /* div {
+            border: 1px solid red;
+        } */
+
+        #container-1, #container-2 {
+            /* id는 한 개만 선택 가능, 아이디명 중복 불가 */
+            /* 그룹선택자 - 콤마로 구분 (같은 선상의 요소들) */
+            /* 하위선택자는 띄어쓰기로 구분 (부모 자식사이) */
+            padding: 10px;
+            width: 700px;
+            height: 110px;
+            border: 1px dashed gray;
+            margin: 0 auto;
+        }
+        /* 
+        #container-2 {
+            width: 700px;
+            height: 200px;
+            border: 1px solid gray;
+            margin: 0 auto;
+        } */
+
+        .container div {
+            /* 클래스 선택자 - 한 개 이상 선택해서 스타일을 줄 때 사용 */
+            /* .container의 하위요소인 div를 모두 선택하여 스타일 적용 */
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            line-height: 100px;
+            /* 한 줄일 경우 텍스트를 세로 가운데 정렬할 때 line-height 높이값만큼 줌 */
+            
+        }
+
+        .box-01 {
+            background-color: rgb(223, 166, 22);
+            float: left;
+        }
+        .box-02 {
+            background-color: rgb(199, 193, 106);
+            float: right;
+        }
+        /* 자식개채들은 부모요소의 크기에 영향을 받아, 속성을 주면 부모요소부터 시작함. */
+        /* 부모요소에 높이값을 주지 않아도 자식객체 높이 값이 있으면, 
+        자식객체 높이 값을 합친 값을 자신의 높이로 인식하지만,
+        부모가 자식객체의 높이를 인식하지 못하므로 반드시 높이를 줘야 함 */
+        /* float은 left, right만 있음 right로 하면 순서가 뒤집어짐 */
+    </style>
+</head>
+
+<body>
+    <p>div 태그는 영역을 잡아주는 태그이며, 레이아웃 구성시 가장 많이 쓰인다. </p>
+    <!-- div, p, h 전부 블럭요소 -->
+    <h2>float-left 연습</h2>
+    <div id="container-1" class="container">
+        <!-- id는 한개만 쓸 수 있으나, class는 다수를 묶어서 선택할 수 있다. -->
+        <div class="box-01">box-01</div>
+        <div class="box-01">box-02</div>
+        <div class="box-01">box-03</div>
+        <div class="box-01">box-04</div>
+        <div class="box-01">box-05</div>
+    </div> <!--containter end-->
+
+    <h2>float;right 연습</h2>
+    <div id="container-2" class="container">
+        <div class="box-02">box-02-1</div>
+        <div class="box-02">box-02-2</div>
+        <div class="box-02">box-02-3</div>
+        <div class="box-02">box-02-4</div>
+        <div class="box-02">box-02-5</div>
+
+    </div>
+    
+</body>
+</html>
