@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub_menu</title>
+    <style>
+        /* universal */
+        * {margin: 0; padding: 0; list-style: none; 
+            text-decoration: none; box-sizing: border-box;}
+
+        /* container */
+        .nav {
+            width: 80%;
+            height: 50px;
+            border: 1px solid black;
+            margin: 0px auto;
+            position: relative; top: 0; left:0; z-index: 3;
+            /* relative는 top,left를 주지 않으면 그 자리에 있는거
+            z-index를 주면 밑에 article영향 x */
+        }
+
+        .nav>ul {
+            width: 100%;
+            height: 100%;
+        }
+        .nav>ul>li {
+            float: left;
+            width: 12.5%;
+            height: 100%;
+            /* outline: 1px solid #bbb; */
+            margin-left: 1.56%;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+
+        .nav>ul>li:hover ul {
+            height: 205px;
+            border: 1px solid #bbb;
+            background-color: white;
+        }
+
+        .nav>ul>li:nth-child(2):hover ul {height: 100px;}
+        .nav>ul>li:nth-child(3):hover ul {height: 150px;}
+        .nav>ul>li:nth-child(4):hover ul {height: 300px;}
+
+        .nav>ul>li>ul {
+            width: 98%; height: 0px;
+            overflow: hidden;
+            transition: all 0.5s;
+        }
+        .nav>ul>li>ul>li {
+            width: 98%; height: 50px;
+            margin-left: 2px;
+        }
+
+        .nav>ul>li>ul>li:hover {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        /* section */
+        section {width: 80%; height: 800px; 
+            border:1px solid black; margin: 0 auto;
+            position: relative; top: 0; left: 0;}
+
+        section article {position: absolute; top: 0; left: 0;
+        width: 100%; height: 100; background: whtie; display:none;}
+
+        /* article 1  */
+        #at1 {display:block;}
+
+        #at1>#at1_box1 {
+            width: 90%; height: 200px; margin: 10px auto;
+            /* border: 1px solid black; */}
+
+        #at1>#at1_box2 { width: 90%; margin: 10px auto;}
+
+        #at1>#at1_box1>li, #at1>#at1_box2>li {
+            float: left;
+            width: 14.28%; height: 100%;
+            margin-left:2%;
+            border: 1px solid black;
+        }
+
+        #at1>#at1_box1>li:first-child,
+        #at1>#at1_box2>li:first-child {
+            margin-left: 0;
+        }
+
+        #at1>#at1_box1>li:last-child,
+        #at1>#at1_box2>li:last-child {
+            float: right;
+        }
+
+        #at1>#at1_box1>li:nth-child(2),
+        #at1>#at1_box1>li:nth-child(3),
+        #at1>#at1_box1>li:nth-child(4),
+        #at1>#at1_box1>li:nth-child(5),
+        #at1>#at1_box2>li:nth-child(2),
+        #at1>#at1_box2>li:nth-child(3),
+        #at1>#at1_box2>li:nth-child(4),
+        #at1>#at1_box2>li:nth-child(5) {
+            margin-left:2.8%;
+        }
+
+        #at1>#at1_box1>li>img { width: 100%; height: 100%;}
+        #at1>#at1_box2>li {line-height: 40px; text-align: center;}
+
+        /* article 2 */
+
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>회사소개
+                <ul>
+                    <li>인사말</li>
+                    <li>연혁</li>
+                    <li>오시는길</li>
+                    <li>고객센터</li>
+                </ul>
+            </li>
+            <li>상품소개
+                <ul>
+                    <li>인기상품</li>
+                    <li>이월상품</li>
+                    
+                </ul>
+            </li>
+            <li>M-menu
+                <ul>
+                    <li>sub-1</li>
+                    <li>sub-2</li>
+                    <li>sub-3</li>
+                </ul>
+            </li>
+            <li>M-menu
+                <ul>
+                    <li>sub-1</li>
+                    <li>sub-2</li>
+                    <li>sub-3</li>
+                    <li>sub-4</li>
+                    <li>sub-5</li>
+                    <li>sub-6</li>
+                </ul>
+            </li>
+            <li>M-menu
+                <ul>
+                    <li>sub-1</li>
+                    <li>sub-2</li>
+                    <li>sub-3</li>
+                    <li>sub-4</li>
+                </ul>
+            </li>
+            <li>M-menu
+                <ul>
+                    <li>sub-1</li>
+                    <li>sub-2</li>
+                    <li>sub-3</li>
+                    <li>sub-4</li>
+                </ul>
+            </li>
+            <li>M-menu
+                <ul>
+                    <li>sub-1</li>
+                    <li>sub-2</li>
+                    <li>sub-3</li>
+                    <li>sub-4</li>
+                </ul>
+            </li>
+        </ul>
+    </div> <!-- nav end -->
+    <section>
+        <article id="at1">
+            <ul id="at1_box1">
+                <li><img src="img/gge.gif" alt=""></li>
+                <li><img src="img/ggg.gif" alt=""></li>
+                <li><img src="img/dfw.gif" alt=""></li>
+                <li><img src="img/dkdl.gif" alt=""></li>
+                <li><img src="img/dfs.gif" alt=""></li>
+                <li><img src="img/dkdl.gif" alt=""></li>
+            </ul> <!-- at1_box1 end -->
+
+            <ul id="at1_box2">
+                <li>텔레토비 안녕</li>
+                <li>신난 나나</li>
+                <li>신난 뽀오</li>
+                <li>좋아죽는 텔토</li>
+                <li>축하하는 보라돌이</li>
+                <li>좋아하는 텔토</li>
+            </ul>
+        </article><!-- at1 end -->
+
+        <article id="at2">at-2</article>
+        <article id="at3">at-3</article>
+        <article id="at4">at-4</article>
+        <article id="at5">at-5</article>
+        <article id="at6">at-6</article>
+        <article id="at7">at-7</article>
+        <article id="at8">at-8</article>
+        <article id="at9">at-9</article>
+    </section>
+</body>
+</html>
